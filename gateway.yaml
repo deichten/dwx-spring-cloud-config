@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+zuul:
+  routes:
+    weather:
+      path: /weather/**
+      serviceId: weather
+      stripPrefix: false
+    members:
+      path: /members/**
+      serviceId: members
+      stripPrefix: false
+    resources:
+      path: /**
+      serviceId: resource
+      stripPrefix: false
+  ignored-services: '*'
+
