@@ -1,4 +1,8 @@
 spring:
+  datasource:
+    url: '{cipher}17349114b25ac7500788ce7d98ea8510291487d78f00528ae9b161453e4d5b4e4bad54ea87a228eb497f45f1ace51dd190447804688bf88b55666b324e06219f'
+    username: '{cipher}3beab3aeb13014d240999f836f546ff2534bea40390304369a9de0e24a327803'
+    password: '{cipher}9287aea8cafc27591d4130b4be86c1d986f5f514a78e79a6b66928e4b73aa717'
   jpa:
     hibernate:
       ddl-auto: update

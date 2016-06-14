@@ -1,0 +1,4 @@
+app:
+  weather:
+    api:
+      key: '{cipher}9d39eca54a11bddd75bf047e4f10e7f4eb883f5ec30c842fd6b55d4ad8a04b961ebd8dcb7d0ec373ea571a13f6568c99d56dff8c4a8d52ecd151eacde0d51355'
