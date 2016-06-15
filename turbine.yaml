@@ -2,5 +2,7 @@ server:
   port: 5001
 
 turbine:
-  appConfig: gateway,members,resource,weather
+  aggregator:
+    clusterConfig: GATEWAY,MEMBERS,WEATHER
+  appConfig: gateway,members,weather
   cluster-name-expression: "'default'"

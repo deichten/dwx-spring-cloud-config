@@ -18,3 +18,16 @@ spring:
 sample:
   zipkin:
     enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+      metrics:
+        rollingStats:
+          timeInMilliseconds: 60000
+        rollingPercentile:
+          timeInMilliseconds: 60000
