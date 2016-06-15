@@ -11,9 +11,9 @@ zuul:
       path: /members/**
       serviceId: members
       stripPrefix: false
-    resources:
+    static:
       path: /**
       serviceId: resource
       stripPrefix: false
   ignored-services: '*'
-
+  ignoredPatterns: '/hystrix.stream/**,/routes,/metrics/**,/health,/env,/error,/info,/pause,/resume,/dump,/configprops,/beans,/trace,/autoconfig,/features,/refresh,/mappings'
