@@ -1,2 +1,5 @@
 server:
   port: 5001
+
+turbine:
+  appConfig: gateway,members,resource,weather
