@@ -9,3 +9,7 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+suggestion:
+  ribbon:
+    listOfServers: https://suggestionservice.azurewebsites.net/suggestion/
