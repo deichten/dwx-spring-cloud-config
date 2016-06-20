@@ -11,6 +11,9 @@ zuul:
       path: /members/**
       serviceId: members
       stripPrefix: false
+    suggestion:
+      path: /suggestion/**
+      url: https://suggestionservice.azurewebsites.net/suggestion/
     static:
       path: /**
       serviceId: resource
