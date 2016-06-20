@@ -11,9 +11,16 @@ zuul:
       path: /members/**
       serviceId: members
       stripPrefix: false
+    suggestion:
+      path: /suggestion/
+      serviceId: suggestion
     static:
       path: /**
       serviceId: resource
       stripPrefix: false
   ignored-services: '*'
   ignoredPatterns: '/hystrix.stream/**,/routes,/metrics/**,/health,/env,/error,/info,/pause,/resume,/dump,/configprops,/beans,/trace,/autoconfig,/features,/refresh,/mappings'
+
+suggestion:
+  ribbon:
+    listOfServers: https://suggestionservice.azurewebsites.net/suggestion/
