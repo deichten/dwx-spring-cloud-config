@@ -12,7 +12,7 @@ zuul:
       serviceId: members
       stripPrefix: false
     suggestion:
-      path: /suggestion/
+      path: /suggestion/**
       serviceId: suggestion
     static:
       path: /**
